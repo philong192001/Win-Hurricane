@@ -1,100 +1,46 @@
-<p align="center">
-    <a href="http://ars.codedy.epizy.com" target="_blank">
-        <img src="https://raw.githubusercontent.com/Hieu-iceTea/ARS.CODEDY/master/public/img/logo/logo_animation.gif" height="100px">
-    </a>
-    <h1 align="center">ARS.CODEDY</h1>
-    <br>
-    <p align="center">
-        <a href="http://github.com/Hieu-iceTea/ARS.CODEDY"><img src="https://cdn.iconscout.com/icon/free/png-512/github-153-675523.png" height="25px"></a>
-    &nbsp;
-        <a href="http://ars.codedy.epizy.com"><img src="https://lapcamerataihaiphong.com/wp-content/uploads/2018/02/website.png" height="25px"></a>
-    &nbsp;
-        <a href="http://fb.com/Hieu.iceTea"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/480px-Facebook_Logo_%282019%29.png" height="25px"></a>
-    </p>
-</p>
+
 
 ## Information
 
-Airlines Reservation System by CODEDY team - Project SEM2, FPT Aptech
+ ............................. by Win Hurricane team - TECHWIZ 2 , Aptech Global 
 
-The project has been deployed at the link: <b> [https://ars.codedy.epizy.com](http://ars.codedy.epizy.com). </b>
+The project has been deployed at the link: <b>...................................................... </b>
 
-Laravel version: 7.x (has updated to version 8.x)
+ASP.NET Core version: 3.1 (has updated to .Net 5).
 
-PHP version: 7.x (has updated to version 8.x)
+Identiry EntityFrameworkCore version: 3.1.9 (has updated to version 5.0).
 
-Power by: CODEDY team
+Microsoft SQL Server 2019.
+
+Power by: Win Hurricane team
 
 Contributors:
-
-  * Nguyễn Đình Hiếu (Team Leader) [Contact now](http://hieu-icetea.github.io).
-  * Vũ Quang Huy
-  * Đỗ Thị Chan Hòa
-  * Phạm Tuân
+  
+* Memtor: Nguyen Duy Hoang.
+* Supporter: Viet Trinh.
+* Team: 
+  * Long Phi.  
+  * Thien Phu.
+  * Pham Tuan.
+  * Truong Thanh Tu
   
 ## Installation
 
-1. Install the package through [Composer](http://getcomposer.org/).
+1.
+  
+2.
 
-    Run the Composer instal:
-    ```bash
-    composer instal
-    ```
+3.
 
-2. Build the `.evn` file according to the `.env.example` file template.
-
-3. Building the database structure and sample data.
-
-    Go to the folder `_Docs/DataBase_Script` in the project root directory, find the file `ARS_ScriptDatabe_Create_Insert.sql` and run it with MyPHPAdmin.
-
-4. Start server.
-
-    ```bash
-    php artisan serve
-    ```
+4. 
 
 ## Using
 
-* Sample search data:
-
-    ```
-    From: Ha Noi
-    To: Ho Chi Minh
-    Departure day: 10/10/2022
-    ```
-
-* Member account:
-
-    ```
-    Username: Hieu-iceTea
-    Password: 123456
-    ```
-
-* Admin account:
-
-    ```
-    Username: Admin_Demo
-    Password: 123456
-    ```
-
-* Link admin page:
-
-    ```
-    http://Root_URL/admin
-    ```
-
-* Online payment using VNPay (test account):
-
-    ```
-    //Bank: NCB
-    //Card number: 9704198526191432198
-    //Account name: NGUYEN VAN A
-    //Release date: 07/15
-    //OTP password: 123456 
-    ```
-
+* 
+* 
+*
+* 
+* 
 ## More information
 
-<> Web Deployed: [ars.codedy.epizy.com](http://ars.codedy.epizy.com)
 
-<> Link GitHub: [github.com/Hieu-iceTea/ARS.CODEDY](http://github.com/Hieu-iceTea/ARS.CODEDY)
