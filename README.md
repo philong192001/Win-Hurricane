@@ -16,7 +16,7 @@ Power by: Win Hurricane team
 
 Contributors:
   
-* Memtor: Nguyen Duy Hoang.
+* Mentor: Nguyen Duy Hoang.
 * Supporter: Viet Trinh.
 * Team: 
   * Long Phi.  
