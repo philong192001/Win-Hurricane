@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using TechWiz.WinHurricane.Databases;
+using TechWiz.WinHurricane.Services.Mail;
 
 namespace TechWiz.WinHurricane
 {
@@ -34,6 +35,9 @@ namespace TechWiz.WinHurricane
             //Đăng ký các dependency injection
             services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AppDBContext>();
 
+            services.AddTransient<IEmailSender, SendMailService>();
+
+            //Cấu hình dịch vụ của identity
             services.Configure<IdentityOptions>(options =>
             {
                 // Password settings.
