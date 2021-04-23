@@ -8,7 +8,7 @@ The project has been deployed at the link: <b>..................................
 
 ASP.NET Core version: 3.1 (has updated to .Net 5).
 
-Identiry EntityFrameworkCore version: 3.1.9 (has updated to version 5.0).
+Identity EntityFrameworkCore version: 3.1.9 (has updated to version 5.0).
 
 Microsoft SQL Server 2019.
 
