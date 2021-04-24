@@ -10,7 +10,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using TechWiz.WinHurricane.Databases;
+<<<<<<< HEAD
 using TechWiz.WinHurricane.Models;
+=======
+using TechWiz.WinHurricane.Services.Mail;
+>>>>>>> 32c580a7c9eae59c56824d364d3e8b0d1e1cbdaa
 
 namespace TechWiz.WinHurricane
 {
@@ -37,6 +41,9 @@ namespace TechWiz.WinHurricane
             //Đăng ký các dependency injection
             services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AppDBContext>();
 
+            services.AddTransient<IEmailSender, SendMailService>();
+
+            //Cấu hình dịch vụ của identity
             services.Configure<IdentityOptions>(options =>
             {
                 // Password settings.
