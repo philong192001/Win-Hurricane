@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using TechWiz.WinHurricane.Databases;
+using TechWiz.WinHurricane.Models;
 
 namespace TechWiz.WinHurricane
 {
@@ -25,6 +26,8 @@ namespace TechWiz.WinHurricane
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<ApplicationUser>();
+
             services.AddControllersWithViews();
 
             //Cấu hình kêt nối db
@@ -32,7 +35,7 @@ namespace TechWiz.WinHurricane
             services.AddDbContext<AppDBContext>(c => c.UseSqlServer(connectionString));
 
             //Đăng ký các dependency injection
-            services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AppDBContext>();
+            services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AppDBContext>();
 
             services.Configure<IdentityOptions>(options =>
             {

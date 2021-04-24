@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TechWiz.WinHurricane.Databases;
 
 namespace TechWiz.WinHurricane.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    partial class AppDBContextModelSnapshot : ModelSnapshot
+    [Migration("20210424074234_addfeedback3")]
+    partial class addfeedback3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -224,90 +226,6 @@ namespace TechWiz.WinHurricane.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
-            modelBuilder.Entity("TechWiz.WinHurricane.Models.Booking", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("amount")
-                        .HasColumnType("int");
-
-                    b.Property<string>("date")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("distance")
-                        .HasColumnType("int");
-
-                    b.Property<string>("from")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("id_driver")
-                        .HasColumnType("int");
-
-                    b.Property<string>("id_user")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("to")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("id");
-
-                    b.ToTable("Bookings");
-                });
-
-            modelBuilder.Entity("TechWiz.WinHurricane.Models.Car", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("type")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("id");
-
-                    b.ToTable("Cars");
-                });
-
-            modelBuilder.Entity("TechWiz.WinHurricane.Models.Driver", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("id_car")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("id_proof")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("phone")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("status")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("type")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("id");
-
-                    b.ToTable("Drivers");
-                });
-
             modelBuilder.Entity("TechWiz.WinHurricane.Models.Feedback", b =>
                 {
                     b.Property<int>("id")
@@ -325,57 +243,6 @@ namespace TechWiz.WinHurricane.Migrations
                     b.HasKey("id");
 
                     b.ToTable("Feedbacks");
-                });
-
-            modelBuilder.Entity("TechWiz.WinHurricane.Models.Notification", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Date")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("From")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Time")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("To")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("id_user")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("id");
-
-                    b.ToTable("Notifications");
-                });
-
-            modelBuilder.Entity("TechWiz.WinHurricane.Models.Order", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("id_booking")
-                        .HasColumnType("int");
-
-                    b.Property<string>("id_user")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("sub_amount")
-                        .HasColumnType("int");
-
-                    b.HasKey("id");
-
-                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
